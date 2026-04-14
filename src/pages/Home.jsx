@@ -12,8 +12,7 @@ const Home = () => {
 
   return (
     <div>
-
-      <section className="relative flex flex-col items-center justify-center min-h-screen text-center px-4">
+      <section className="relative flex flex-col items-center justify-center text-center px-4 overflow-hidden" style={{ height: 'calc(100vh - 64px)' }}>
         <div
           aria-hidden="true"
           className="absolute inset-0 bg-center bg-no-repeat opacity-70"
@@ -25,7 +24,7 @@ const Home = () => {
         <div aria-hidden="true" className="absolute inset-0 bg-black/40" />
 
         <div className="relative z-10 flex flex-col items-center">
-          <h1 className="text-4xl sm:text-5xl md:text-7xl font-extrabold text-pink-100 mb-4 animate-fade-in">
+          <h1 className="text-5xl sm:text-5xl md:text-7xl font-extrabold text-brand-light mb-4 animate-fade-in">
             welcome to capybara café
           </h1>
 
@@ -35,14 +34,14 @@ const Home = () => {
 
           <div className="flex flex-col sm:flex-row gap-5">
             <button
-              className="bg-pink-100 text-pink-400 font-bold px-8 py-4 rounded-full transition cursor-pointer hover:bg-pink-200 hover:scale-105 active:scale-95"
+              className="bg-brand-light text-brand font-bold px-8 py-4 rounded-full hover:scale-105 transition duration-300"
               onClick={() => navigate("/reservations")}
             >
               make a reservation
             </button>
 
             <button
-              className="bg-pink-100 text-pink-400 font-bold px-8 py-4 rounded-full transition cursor-pointer hover:bg-pink-200 hover:scale-105 active:scale-95"
+              className="bg-brand-light text-brand font-bold px-8 py-4 rounded-full hover:scale-105 transition duration-300"
               onClick={() => scrollTo("#map")}
             >
               find us
@@ -51,12 +50,12 @@ const Home = () => {
         </div>
       </section>
 
-      <section id="features" className="bg-pink-50 flex flex-col items-center text-center px-4 py-24">
-        <h2 className="text-3xl md:text-4xl font-extrabold text-pink-400 mb-10">
+      <section id="features" className="bg-brand-soft flex flex-col items-center text-center px-4 py-24">
+        <h2 className="text-3xl md:text-4xl font-extrabold text-brand mb-15">
           why you'll love capybara café
         </h2>
 
-        <div className="grid md:grid-cols-3 gap-8 max-w-5xl w-full">
+        <div className="grid md:grid-cols-3 gap-8 max-w-4xl w-full">
           {[
             {
               title: "adorable companions",
@@ -71,18 +70,18 @@ const Home = () => {
               desc: "soft music, warm lights and stress-free vibes",
             },
           ].map(({ title, desc }) => (
-            <div key={title} className="bg-white rounded-2xl p-6 shadow-sm">
-              <h3 className="text-xl font-extrabold text-pink-400 mb-2">{title}</h3>
-              <p className="text-gray-500">{desc}</p>
+            <div key={title} className="bg-white rounded-2xl p-6 shadow-sm hover:scale-105 transition duration-300">
+              <h3 className="text-xl font-extrabold text-brand mb-2">{title}</h3>
+              <p className="text-text-muted">{desc}</p>
             </div>
           ))}
         </div>
 
         <div
           id="map"
-          className="w-full max-w-4xl rounded-3xl overflow-hidden bg-white mt-16 shadow-lg"
+          className="w-full max-w-4xl rounded-3xl overflow-hidden bg-white mt-16 shadow-lg mt-20"
         >
-          <h2 className="text-2xl font-bold text-pink-400 m-3 text-center">
+          <h2 className="text-2xl font-bold text-brand m-3 text-center">
             our location
           </h2>
           <div className="h-80 w-full">
@@ -98,11 +97,10 @@ const Home = () => {
           </div>
         </div>
 
-        <p className="font-semibold text-gray-500 max-w-2xl mx-auto mt-6 text-sm md:text-base">
+        <p className="font-semibold text-text-muted max-w-2xl mx-auto mt-10 text-sm md:text-base">
           relax, sip your favorite coffee, and enjoy the calmest café experience in tokyo
         </p>
       </section>
-
     </div>
   );
 };
