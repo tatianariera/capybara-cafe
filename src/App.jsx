@@ -6,6 +6,7 @@ import Navbar from './components/Navbar'
 import Prices from './pages/Prices'
 import Reservations from './pages/Reservations'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import Footer from './components/Footer'
 
 function App() {
 
@@ -18,6 +19,7 @@ function App() {
         <Route path="/prices" element={<Prices />} />
         <Route path="/reservations" element={<Reservations />} />
       </Routes>
+      <Footer/>
     </BrowserRouter>
   )
 }
