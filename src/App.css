@@ -8,3 +8,15 @@
   --color-text-body: #374151;
   --color-text-muted: #6b7280;
 }
+ 
+.btn-brand {
+  @apply font-bold px-8 py-4 rounded-full transition duration-300;
+  @apply hover:scale-105;
+
+  background-color: var(--color-brand-light);
+  color: var(--color-brand);
+}
+
+.h1-brand {
+  @apply text-4xl md:text-5xl font-extrabold text-brand mb-10;
+}

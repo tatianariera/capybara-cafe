@@ -68,7 +68,7 @@ const Reservations = () => {
 
   return (
     <div className="min-h-screen bg-white flex flex-col items-center px-4 py-16">
-      <h1 className="text-4xl md:text-5xl font-extrabold text-brand mb-10">make a reservation</h1>
+      <h1 className="h1-brand">make a reservation</h1>
       
       <div className="bg-brand-soft p-6 rounded-2xl shadow-lg">
         <Calendar 
@@ -97,7 +97,7 @@ const Reservations = () => {
         selected time: {date.toDateString()}
       </p>
 
-      <div className="mt-6 flex gap-4 flex-wrap justify-center">
+      <div className="mt-6 flex gap-4 flex-wrap justify-center mb-5">
         {availableSlots.length === 0 ? (
           <p className="text-red-500 font-medium">
             no slots available
@@ -107,7 +107,7 @@ const Reservations = () => {
             <button
               key={slot}
               onClick={() => handleReserve(slot)}
-              className="bg-brad text-white px-5 py-2 rounded-xl bg-brand-muted transition"
+              className="bg-brad text-white px-5 py-2 rounded-xl bg-brand-muted transition duration-300 hover:scale-105"
             >
               {slot}
             </button>
@@ -117,11 +117,14 @@ const Reservations = () => {
 
       <button
         onClick={() => setReservations([])}
-        className="mt-10 text-sm"
+        className="btn-brand"
       >
         reset reservation
       </button>  
 
+      <p className="font-semibold text-text-muted max-w-2xl mx-auto mt-10 text-sm md:text-base text-center">
+        note that a drink purchase is required id addition to the entry fee - please don't forget to be gentle with our capybaras
+      </p>
 
     </div>
   );

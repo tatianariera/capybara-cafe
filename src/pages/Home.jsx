@@ -34,14 +34,14 @@ const Home = () => {
 
           <div className="flex flex-col sm:flex-row gap-5">
             <button
-              className="bg-brand-light text-brand font-bold px-8 py-4 rounded-full hover:scale-105 transition duration-300"
+              className="btn-brand"
               onClick={() => navigate("/reservations")}
             >
               make a reservation
             </button>
 
             <button
-              className="bg-brand-light text-brand font-bold px-8 py-4 rounded-full hover:scale-105 transition duration-300"
+              className="btn-brand"
               onClick={() => scrollTo("#map")}
             >
               find us

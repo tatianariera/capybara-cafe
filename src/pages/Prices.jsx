@@ -10,7 +10,7 @@ const Prices = () => {
 
   return (
     <div className="min-h-screen bg-white flex flex-col items-center px-4 py-16">
-      <h1 className="text-4xl md:text-5xl font-extrabold text-brand mb-10">
+      <h1 className="h1-brand">
         prices
       </h1>
       <div className="grid grid-cols-3 gap-6 w-full max-w-4xl">

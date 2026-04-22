@@ -11,7 +11,7 @@ const Capybaras = () => {
 
   return (
     <div className="min-h-screen flex flex-col items-center justify-top py-12 px-4">
-      <h1 className="text-4xl md:text-5xl font-extrabold text-brand mb-8">
+      <h1 className="h1-brand">
         meet the family
       </h1>
       <div className="flex flex-cols gap-6 max-w-6xl">
