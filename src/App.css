@@ -4,6 +4,7 @@
   --color-brand: #f472b6;
   --color-brand-light: #fce7f3;
   --color-brand-soft: #fdf2f8;
+  --color-brand-strong: #db2777;
   --color-brand-muted: #f9a8d4;
   --color-text-body: #374151;
   --color-text-muted: #6b7280;
@@ -15,6 +16,12 @@
 
   background-color: var(--color-brand-light);
   color: var(--color-brand);
+}
+.btn-brand__light {
+  @apply font-bold px-8 py-4 rounded-full transition duration-300 hover:scale-105;
+
+  background-color: var(--color-brand-strong);
+  color: white;
 }
 
 .h1-brand {

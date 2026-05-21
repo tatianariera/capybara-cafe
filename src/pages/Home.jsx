@@ -35,9 +35,9 @@ const Home = () => {
           <div className="flex flex-col sm:flex-row gap-5">
             <button
               className="btn-brand"
-              onClick={() => navigate("/reservations")}
+              onClick={() => navigate("/bookings")}
             >
-              make a reservation
+              book a visit
             </button>
 
             <button

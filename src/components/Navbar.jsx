@@ -19,8 +19,8 @@ const Navbar = () => {
                         </a>
                     </li>
                     <li>
-                        <a href="/reservations" className="hover:text-brand transition font-bold">
-                            reservations
+                        <a href="/bookings" className="hover:text-brand transition font-bold">
+                            bookings
                         </a>
                     </li>
                 </ul>
